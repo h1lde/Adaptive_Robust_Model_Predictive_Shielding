@@ -37,7 +37,7 @@ This project demonstrates a novel approach for safe deployment of learning-based
 
 ### Jupyter Notebook
 The jupyter notebook `Results_Adaptive_Robust_MPS.ipynb` illustrates the workflow for reproducing the results presented in the work `Safe Reinforcement Learning via Adaptive Robust Model Predictive Shielding`. It is structured according to the Sections in the work and demonstrates the usage of the different python files and lists the applied hyperparamters and settings. \
-**Note**: This is not the most efficient implementation for reproducing the results and we recommend parallelizing the RL training on the CPU and neural network training on the GPU. For the shielded evaluations we have limited the demonstration to a single model, which have to be extended if more models are to be evaluated. 
+**Note**: This is not the most efficient implementation for reproducing the results and we recommend parallelizing the RL training on the CPU and neural network training on the GPU. For the shielded evaluations we have limited the demonstration to a single model, which have to be extended if more models are to be evaluated. If the code python files are directly executed the path references might need to be adjusted as they are currently defined with respect to the jupyter notebook. 
 
 ### Model Predicitve Shielding Approaches
 The python file `MPS.py` contains the different shielding approaches, which are investigated in the work. Depending on the inputs for the class `shielded_deployment`, **robust MPS**, **adaptive MPS** and **adaptive robust MPS** are implemented. In the jupyter notebook, we exemplarly deploy all shielding approaches for RL policies with and without safety parameter. 
